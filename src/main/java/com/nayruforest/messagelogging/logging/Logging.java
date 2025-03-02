@@ -14,9 +14,9 @@ public class Logging {
     }
 
     // the said logToDiscord method
-    public void logToDiscord(String playerName, String message) {
+    public void logToDiscord(String player, String message) {
         // final loggedmsg string, using the playerName and message
-        String loggedmsg = String.format("{\"content\":\"**%s**: %s\"}", playerName, message);
+        String loggedmsg = String.format("{\"content\":\"**%s**: %s\"}", player, message);
 
         try {
             // creating url
